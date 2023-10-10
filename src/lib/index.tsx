@@ -1,28 +1,76 @@
 'use client'
 
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
-import { init } from './editor'
+import {
+    attachPart,
+    isPartVisibile,
+    onPartVisibilityChange,
+    Parts
+} from '@codingame/monaco-vscode-views-service-override'
 
-export default function Editor() {
-    const editorRef = useRef<HTMLElement>(null)
+import { registerVsCodeMonacoOverrides } from './setup'
+
+function App() {
+    const editorRef = useRef<HTMLDivElement>(null)
+    const explorerRef = useRef<HTMLDivElement>(null)
+
+    const [ideReady, setIdeReady] = useState(false)
 
     useEffect(() => {
-        if (!editorRef.current) return
-
-        init(editorRef.current)
-            .catch(console.error)
-            .then(() => {
-                console.log('Editor initialized')
-            })
+        registerVsCodeMonacoOverrides().then(() => setIdeReady(true))
     }, [])
+    useEffect(() => {
+        if (!editorRef.current || !explorerRef.current || !ideReady) return
 
+        const panels = [
+            {
+                part: 'workbench.parts.editor' as Parts,
+                element: editorRef.current
+            },
+            {
+                part: 'workbench.parts.sidebar' as Parts,
+                element: explorerRef.current
+            }
+        ]
+
+        panels.map((panel) => {
+            attachPart(panel.part, panel.element)
+
+            if (!isPartVisibile(panel.part)) {
+                panel.element.style.display = 'none'
+            }
+
+            onPartVisibilityChange(panel.part, (visible) => {
+                if (!panel.element) return
+                panel.element.style.display = visible ? 'block' : 'none'
+            })
+        })
+    }, [ideReady])
     return (
-        <main
-            ref={editorRef}
+        <div
             style={{
-                height: '100vh'
+                display: 'flex',
+                flexDirection: 'row'
             }}
-        ></main>
+        >
+            <div
+                ref={editorRef}
+                style={{
+                    height: '90vh',
+                    width: '50%'
+                }}
+            ></div>
+
+            <div
+                ref={explorerRef}
+                style={{
+                    height: '90vh',
+                    width: '50%'
+                }}
+            ></div>
+        </div>
     )
 }
+
+export default App

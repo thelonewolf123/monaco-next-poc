@@ -1,20 +1,81 @@
-import 'monaco-editor/esm/vs/editor/editor.all.js'
-import 'monaco-editor/esm/vs/editor/standalone/browser/iPadShowKeyboard/iPadShowKeyboard.js'
+import 'monaco-editor/esm/vs/editor/editor.all.js';
+import 'monaco-editor/esm/vs/editor/standalone/browser/iPadShowKeyboard/iPadShowKeyboard.js';
 
-import { initialize as initializeExtensions } from 'vscode/extensions'
-import { createConfiguredEditor } from 'vscode/monaco'
-import { initialize } from 'vscode/services'
+import * as monaco from 'monaco-editor';
+import { createConfiguredEditor } from 'vscode/monaco';
 
-import getModelOverride from '@codingame/monaco-vscode-model-service-override'
+import {
+    IReference, IResolvedTextEditorModel, OpenEditor
+} from '@codingame/monaco-vscode-views-service-override';
 
-export async function init(el: HTMLElement) {
-    initializeExtensions()
-    initialize({ ...getModelOverride() })
+let currentEditor:
+    | ({
+          modelRef: IReference<IResolvedTextEditorModel>
+          editor: monaco.editor.IStandaloneCodeEditor
+      } & monaco.IDisposable)
+    | null = null
+export const openNewCodeEditor: OpenEditor = async (modelRef) => {
+    if (currentEditor != null) {
+        currentEditor.dispose()
+        currentEditor = null
+    }
+    const container = document.createElement('div')
+    container.style.position = 'fixed'
+    container.style.backgroundColor = 'rgba(0, 0, 0, 0.5)'
+    container.style.top =
+        container.style.bottom =
+        container.style.left =
+        container.style.right =
+            '0'
+    container.style.cursor = 'pointer'
 
-    const editorInstance = createConfiguredEditor(el, {
-        theme: 'vs-dark',
-        automaticLayout: true
-    })
+    const editorElem = document.createElement('div')
+    editorElem.style.position = 'absolute'
+    editorElem.style.top =
+        editorElem.style.bottom =
+        editorElem.style.left =
+        editorElem.style.right =
+            '0'
+    editorElem.style.margin = 'auto'
+    editorElem.style.width = '80%'
+    editorElem.style.height = '80%'
 
-    return editorInstance
+    container.appendChild(editorElem)
+
+    document.body.appendChild(container)
+    try {
+        const editor = createConfiguredEditor(editorElem, {
+            model: modelRef.object.textEditorModel,
+            readOnly: true,
+            automaticLayout: true
+        })
+
+        currentEditor = {
+            dispose: () => {
+                editor.dispose()
+                modelRef.dispose()
+                document.body.removeChild(container)
+                currentEditor = null
+            },
+            modelRef,
+            editor
+        }
+
+        editor.onDidBlurEditorWidget(() => {
+            currentEditor?.dispose()
+        })
+        container.addEventListener('mousedown', (event) => {
+            if (event.target !== container) {
+                return
+            }
+
+            currentEditor?.dispose()
+        })
+
+        return editor
+    } catch (error) {
+        document.body.removeChild(container)
+        currentEditor = null
+        throw error
+    }
 }
