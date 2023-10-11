@@ -45,112 +45,130 @@ import getLifecycleServiceOverride from '@codingame/monaco-vscode-lifecycle-serv
 import getMarkersServiceOverride from '@codingame/monaco-vscode-markers-service-override'
 import getModelServiceOverride from '@codingame/monaco-vscode-model-service-override'
 import getNotificationServiceOverride from '@codingame/monaco-vscode-notifications-service-override'
+import getOutputServiceOverride from '@codingame/monaco-vscode-output-service-override'
 import getPreferencesServiceOverride from '@codingame/monaco-vscode-preferences-service-override'
 import getQuickAccessServiceOverride from '@codingame/monaco-vscode-quickaccess-service-override'
+import getSearchServiceOverride from '@codingame/monaco-vscode-search-service-override'
 import getSnippetServiceOverride from '@codingame/monaco-vscode-snippets-service-override'
 import getStorageServiceOverride, {
     BrowserStorageService
 } from '@codingame/monaco-vscode-storage-service-override'
 import getTextmateServiceOverride from '@codingame/monaco-vscode-textmate-service-override'
 import getThemeServiceOverride from '@codingame/monaco-vscode-theme-service-override'
+import getBannerServiceOverride from '@codingame/monaco-vscode-view-banner-service-override'
+import getStatusBarServiceOverride from '@codingame/monaco-vscode-view-status-bar-service-override'
+import getTitleBarServiceOverride from '@codingame/monaco-vscode-view-title-bar-service-override'
 import getViewsServiceOverride, {
     isEditorPartVisible
 } from '@codingame/monaco-vscode-views-service-override'
 import getWorkspaceTrustOverride from '@codingame/monaco-vscode-workspace-trust-service-override'
 
 import { openNewCodeEditor } from './editor'
-import { toCrossOriginWorker, toWorkerConfig } from './tools/workers'
+import {
+    CrossOriginWorker,
+    toCrossOriginWorker,
+    toWorkerConfig
+} from './tools/workers'
 
 // Workers
-type WorkerLoader = () => Worker
-
-export async function registerVsCodeMonacoOverrides() {
-    window.MonacoEnvironment = {
-        getWorker: async function (moduleId, label) {
-            switch (label) {
-                case 'editorWorkerService':
-                    return new Worker(
-                        new URL(
-                            'monaco-editor/esm/vs/editor/editor.worker',
-                            import.meta.url
-                        )
-                    )
-                case 'css':
-                case 'less':
-                case 'scss':
-                    return new Worker(
-                        new URL(
-                            'monaco-editor/esm/vs/language/css/css.worker',
-                            import.meta.url
-                        )
-                    )
-                case 'handlebars':
-                case 'html':
-                case 'razor':
-                    return new Worker(
-                        new URL(
-                            'monaco-editor/esm/vs/language/html/html.worker',
-                            import.meta.url
-                        )
-                    )
-                case 'json':
-                    return new Worker(
-                        new URL(
-                            'monaco-editor/esm/vs/language/json/json.worker',
-                            import.meta.url
-                        )
-                    )
-                case 'javascript':
-                case 'typescript':
-                    return new Worker(
-                        new URL(
-                            'monaco-editor/esm/vs/language/typescript/ts.worker',
-                            import.meta.url
-                        )
-                    )
-                default:
-                    throw new Error(
-                        `Unimplemented worker ${label} (${moduleId})`
-                    )
+export type WorkerLoader = () => Worker
+const workerLoaders: Partial<Record<string, WorkerLoader>> = {
+    editorWorkerService: () =>
+        new Worker(
+            new URL(
+                'monaco-editor/esm/vs/editor/editor.worker.js',
+                import.meta.url
+            ),
+            {
+                type: 'module'
             }
-        }
-    }
-
-    // Override services
-    await initializeMonacoService({
-        ...getExtensionServiceOverride(),
-        ...getModelServiceOverride(),
-        ...getNotificationServiceOverride(),
-        ...getDialogsServiceOverride(),
-        ...getConfigurationServiceOverride(monaco.Uri.file('/code')),
-        ...getKeybindingsServiceOverride(),
-        ...getTextmateServiceOverride(),
-        ...getThemeServiceOverride(),
-        ...getLanguagesServiceOverride(),
-        ...getAudioCueServiceOverride(),
-        ...getDebugServiceOverride(),
-        ...getPreferencesServiceOverride(),
-        ...getViewsServiceOverride(openNewCodeEditor),
-        ...getSnippetServiceOverride(),
-        ...getQuickAccessServiceOverride({
-            isKeybindingConfigurationVisible: isEditorPartVisible,
-            shouldUseGlobalPicker: (_editor, isStandalone) =>
-                !isStandalone && isEditorPartVisible()
-        }),
-        ...getMarkersServiceOverride(),
-        ...getAccessibilityServiceOverride(),
-        ...getLanguageDetectionWorkerServiceOverride(),
-        ...getStorageServiceOverride(),
-        ...getLifecycleServiceOverride(),
-        ...getEnvironmentServiceOverride({
-            enableWorkspaceTrust: true
-        }),
-        ...getWorkspaceTrustOverride()
-    })
-    StandaloneServices.get(ILogService).setLevel(LogLevel.Off)
-
-    await initializeVscodeExtensions()
+        ),
+    textMateWorker: () =>
+        new Worker(
+            new URL(
+                '@codingame/monaco-vscode-textmate-service-override/worker',
+                import.meta.url
+            ),
+            {
+                type: 'module'
+            }
+        ),
+    languageDetectionWorkerService: () =>
+        new Worker(
+            new URL(
+                '@codingame/monaco-vscode-language-detection-worker-service-override/worker',
+                import.meta.url
+            ),
+            {
+                type: 'module'
+            }
+        )
 }
+
+window.MonacoEnvironment = {
+    getWorker: function (moduleId, label) {
+        const workerFactory = workerLoaders[label]
+        if (workerFactory != null) {
+            return workerFactory()
+        }
+        throw new Error(`Unimplemented worker ${label} (${moduleId})`)
+    }
+}
+
+const params = new URL(document.location.href).searchParams
+const remoteAuthority = params.get('remoteAuthority') ?? undefined
+const remotePath =
+    remoteAuthority != null ? params.get('remotePath') ?? undefined : undefined
+
+// Override services
+export const setupPromise = initializeMonacoService({
+    ...getExtensionServiceOverride(),
+    ...getModelServiceOverride(),
+    ...getNotificationServiceOverride(),
+    ...getDialogsServiceOverride(),
+    ...getConfigurationServiceOverride(
+        remotePath == null
+            ? monaco.Uri.file('/tmp')
+            : {
+                  id: 'remote-workspace',
+                  uri: monaco.Uri.from({
+                      scheme: 'vscode-remote',
+                      path: remotePath,
+                      authority: remoteAuthority
+                  })
+              }
+    ),
+    ...getKeybindingsServiceOverride(),
+    ...getTextmateServiceOverride(),
+    ...getThemeServiceOverride(),
+    ...getLanguagesServiceOverride(),
+    ...getAudioCueServiceOverride(),
+    ...getDebugServiceOverride(),
+    ...getPreferencesServiceOverride(),
+    ...getViewsServiceOverride(openNewCodeEditor),
+    ...getBannerServiceOverride(),
+    ...getStatusBarServiceOverride(),
+    ...getTitleBarServiceOverride(),
+    ...getSnippetServiceOverride(),
+    ...getQuickAccessServiceOverride({
+        isKeybindingConfigurationVisible: isEditorPartVisible,
+        shouldUseGlobalPicker: (_editor, isStandalone) =>
+            !isStandalone && isEditorPartVisible()
+    }),
+    ...getOutputServiceOverride(),
+    ...getSearchServiceOverride(),
+    ...getMarkersServiceOverride(),
+    ...getAccessibilityServiceOverride(),
+    ...getLanguageDetectionWorkerServiceOverride(),
+    ...getStorageServiceOverride(),
+    ...getLifecycleServiceOverride(),
+    ...getEnvironmentServiceOverride({
+        remoteAuthority,
+        enableWorkspaceTrust: true
+    }),
+    ...getWorkspaceTrustOverride()
+}).then(() => initializeVscodeExtensions())
+StandaloneServices.get(ILogService).setLevel(LogLevel.Off)
 
 export async function clearStorage(): Promise<void> {
     await ((await getService(IStorageService)) as BrowserStorageService).clear()

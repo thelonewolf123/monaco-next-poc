@@ -5,7 +5,7 @@ import type { WorkerConfig } from '@codingame/monaco-vscode-extensions-service-o
  * The workaround used by vscode is to start a worker on a blob url containing a short script calling 'importScripts'
  * importScripts accepts to load the code inside the blob worker
  */
-class CrossOriginWorker extends Worker {
+export class CrossOriginWorker extends Worker {
     constructor(url: string | URL, options: WorkerOptions = {}) {
         const fullUrl = new URL(url, window.location.href).href
         const js =
@@ -16,7 +16,7 @@ class CrossOriginWorker extends Worker {
         super(URL.createObjectURL(blob), options)
     }
 }
-class FakeWorker {
+export class FakeWorker {
     constructor(public url: string | URL, public options?: WorkerOptions) {}
 }
 /**
@@ -24,13 +24,17 @@ class FakeWorker {
  * We need to hack it to get the generated code and either transform it to a CrossOrigin worker for regular workers
  * or extract the url and options for the extensionHost worker
  */
-export function toCrossOriginWorker(
-    viteWorker: new () => Worker
-): new () => Worker {
+export function toCrossOriginWorker(viteWorker: string): new () => Worker {
+    const fn = new URL(viteWorker, window.location.href).href
+
+    const workerCode = `function () {
+        return new Worker(${fn}, {
+            type: 'module'
+        })
+    }`
+
     // eslint-disable-next-line no-new-func
-    return new Function('Worker', `return ${viteWorker.toString()}`)(
-        CrossOriginWorker
-    )
+    return new Function('Worker', `return ${workerCode}`)(CrossOriginWorker)
 }
 
 export function toWorkerConfig(viteWorker: new () => Worker): WorkerConfig {

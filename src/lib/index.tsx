@@ -9,7 +9,7 @@ import {
     Parts
 } from '@codingame/monaco-vscode-views-service-override'
 
-import { registerVsCodeMonacoOverrides } from './setup'
+import { setupPromise } from './setup'
 
 function App() {
     const editorRef = useRef<HTMLDivElement>(null)
@@ -18,7 +18,7 @@ function App() {
     const [ideReady, setIdeReady] = useState(false)
 
     useEffect(() => {
-        registerVsCodeMonacoOverrides().then(() => setIdeReady(true))
+        setupPromise.then(() => setIdeReady(true))
     }, [])
     useEffect(() => {
         if (!editorRef.current || !explorerRef.current || !ideReady) return

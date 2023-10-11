@@ -48,6 +48,9 @@ const nextConfig = {
     },
     webpack(config, options) {
         config.experiments = { ...config.experiments, topLevelAwait: true }
+        config.resolve.fallback = {
+            fs: false
+        }
         return config
     }
 }
