@@ -64,11 +64,6 @@ import getViewsServiceOverride, {
 import getWorkspaceTrustOverride from '@codingame/monaco-vscode-workspace-trust-service-override'
 
 import { openNewCodeEditor } from './editor'
-import {
-    CrossOriginWorker,
-    toCrossOriginWorker,
-    toWorkerConfig
-} from './tools/workers'
 
 // Workers
 export type WorkerLoader = () => Worker
@@ -105,6 +100,24 @@ const workerLoaders: Partial<Record<string, WorkerLoader>> = {
         )
 }
 
+function getWorkerConfig() {
+    const fullUrl = new URL(
+        'vscode/workers/extensionHost.worker',
+        import.meta.url
+    ).href
+    const urlWithHost = new URL(fullUrl, window.location.href).href
+    console.log({ fullUrl, urlWithHost })
+    return undefined
+
+    return {
+        url: urlWithHost,
+        options: {
+            name: 'extensionHostWorker',
+            type: 'module' as WorkerType
+        }
+    }
+}
+
 window.MonacoEnvironment = {
     getWorker: function (moduleId, label) {
         const workerFactory = workerLoaders[label]
@@ -117,27 +130,14 @@ window.MonacoEnvironment = {
 
 const params = new URL(document.location.href).searchParams
 const remoteAuthority = params.get('remoteAuthority') ?? undefined
-const remotePath =
-    remoteAuthority != null ? params.get('remotePath') ?? undefined : undefined
 
 // Override services
 export const setupPromise = initializeMonacoService({
-    ...getExtensionServiceOverride(),
+    ...getExtensionServiceOverride(getWorkerConfig()),
     ...getModelServiceOverride(),
     ...getNotificationServiceOverride(),
     ...getDialogsServiceOverride(),
-    ...getConfigurationServiceOverride(
-        remotePath == null
-            ? monaco.Uri.file('/tmp')
-            : {
-                  id: 'remote-workspace',
-                  uri: monaco.Uri.from({
-                      scheme: 'vscode-remote',
-                      path: remotePath,
-                      authority: remoteAuthority
-                  })
-              }
-    ),
+    ...getConfigurationServiceOverride(monaco.Uri.file('/code')),
     ...getKeybindingsServiceOverride(),
     ...getTextmateServiceOverride(),
     ...getThemeServiceOverride(),
