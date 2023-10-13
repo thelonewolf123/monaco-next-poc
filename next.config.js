@@ -2,6 +2,10 @@
 const nextConfig = {
     distDir: '.next',
     experimental: { appDir: true },
+    assetPrefix:
+        process.env.NODE_ENV === 'production'
+            ? process.env.VERCEL_URL || 'https://monaco-next-poc.vercel.app/'
+            : `http://localhost:${process.env.PORT || '3000'}/`,
     async headers() {
         return [
             {
