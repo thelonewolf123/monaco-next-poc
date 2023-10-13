@@ -2,28 +2,6 @@
 const nextConfig = {
     distDir: '.next',
     experimental: { appDir: true },
-    images: {
-        remotePatterns: [
-            {
-                protocol: 'https',
-                hostname: 'avatars.githubusercontent.com',
-                port: '',
-                pathname: '/**'
-            },
-            {
-                protocol: 'https',
-                hostname: 'via.placeholder.com',
-                port: '',
-                pathname: '/**'
-            },
-            {
-                protocol: 'https',
-                hostname: 'forge-website-assets.s3.amazonaws.com',
-                port: '',
-                pathname: '/**'
-            }
-        ]
-    },
     async headers() {
         return [
             {
@@ -47,9 +25,21 @@ const nextConfig = {
     },
     webpack(config, options) {
         config.experiments = { ...config.experiments, topLevelAwait: true }
+
         config.resolve.fallback = {
             fs: false
         }
+
+        config.module.rules.push({
+            test: /\.wasm$/,
+            type: 'asset/resource'
+        })
+
+        // config.module.rules.push({
+        //     test: /\.css$/,
+        //     type: 'stylesheet'
+        // })
+
         return config
     }
 }
