@@ -1,0 +1,8 @@
+.flex {
+    display: flex;
+}
+
+.part {
+    height: 100vh;
+    width: 50%;
+}

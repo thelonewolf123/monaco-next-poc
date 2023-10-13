@@ -19,6 +19,7 @@ import '@codingame/monaco-vscode-json-language-features-default-extension'
 import '@codingame/monaco-vscode-typescript-language-features-default-extension'
 import '@codingame/monaco-vscode-html-language-features-default-extension'
 import '@codingame/monaco-vscode-css-language-features-default-extension'
+import './index.css'
 
 // import '@codingame/monaco-vscode-markdown-language-features-default-extension'
 import * as monaco from 'monaco-editor'
@@ -201,27 +202,9 @@ function Editor() {
         })
     }, [ideReady])
     return (
-        <div
-            style={{
-                display: 'flex',
-                flexDirection: 'row'
-            }}
-        >
-            <div
-                ref={editorRef}
-                style={{
-                    height: '90vh',
-                    width: '50%'
-                }}
-            ></div>
-
-            <div
-                ref={explorerRef}
-                style={{
-                    height: '90vh',
-                    width: '50%'
-                }}
-            ></div>
+        <div className="flex">
+            <div ref={editorRef} className="part"></div>
+            <div ref={explorerRef} className="part"></div>
         </div>
     )
 }
