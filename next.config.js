@@ -30,9 +30,6 @@ const nextConfig = {
     env: {
         PROJECT_ROOT: __dirname
     },
-    api: {
-        responseLimit: false
-    },
     webpack(config, options) {
         config.experiments = { ...config.experiments, topLevelAwait: true }
 
@@ -44,25 +41,6 @@ const nextConfig = {
             test: /\.wasm$/,
             type: 'asset/resource'
         })
-
-        if (!options.isServer) {
-            // This entry point will be loaded separately from main.js
-            // const originalEntry = config.entry
-            // config.entry = async () => {
-            //     const entryConfig = await originalEntry()
-            //     console.log(entryConfig)
-            //     return {
-            //         ...entryConfig,
-            //         extensionHostWorker:
-            //             './node_modules/vscode/workers/extensionHost.worker.js'
-            //     }
-            // }
-        }
-
-        // config.module.rules.push({
-        //     test: /\.css$/,
-        //     type: 'stylesheet'
-        // })
 
         return config
     }

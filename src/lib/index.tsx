@@ -16,6 +16,7 @@ import '@codingame/monaco-vscode-references-view-default-extension'
 import '@codingame/monaco-vscode-npm-default-extension'
 // import '@codingame/monaco-vscode-media-preview-default-extension'
 // import '@codingame/monaco-vscode-markdown-language-features-default-extension'
+import '@codingame/monaco-vscode-search-result-default-extension'
 import '@codingame/monaco-vscode-json-language-features-default-extension'
 import '@codingame/monaco-vscode-typescript-language-features-default-extension'
 import '@codingame/monaco-vscode-html-language-features-default-extension'
@@ -47,6 +48,7 @@ import getModelServiceOverride from '@codingame/monaco-vscode-model-service-over
 import getNotificationServiceOverride from '@codingame/monaco-vscode-notifications-service-override'
 import getPreferencesServiceOverride from '@codingame/monaco-vscode-preferences-service-override'
 import getQuickAccessServiceOverride from '@codingame/monaco-vscode-quickaccess-service-override'
+import getSearchServiceOverride from '@codingame/monaco-vscode-search-service-override'
 import getSnippetServiceOverride from '@codingame/monaco-vscode-snippets-service-override'
 import getStorageServiceOverride, {
     BrowserStorageService
@@ -67,38 +69,12 @@ import { openNewCodeEditor } from './editor'
 // Workers
 export type WorkerLoader = () => Worker
 
-function getWorkerConfig() {
-    const path = new URL('vscode/workers/extensionHost.worker', import.meta.url)
-        .href
-    const worker = new Worker(
-        new URL('vscode/workers/extensionHost.worker', import.meta.url),
-        {
-            type: 'module',
-            name: 'vscode/extensionHostWorker'
-        }
-    )
-
-    worker.onmessage = (event) => {
-        console.log(`[Extension Host]`, event.data)
-    }
-
-    // return undefined
-
-    return {
-        url: '/api/extensionHostWorker',
-        options: {
-            name: 'extensionHostWorker',
-            type: 'module' as WorkerType
-        }
-    }
-}
-
 const workerLoaders: Partial<Record<string, WorkerLoader>> = {
     editorWorkerService: () => {
         console.log(`Loading editor worker`)
         return new Worker(
             new URL(
-                'monaco-editor/esm/vs/editor/editor.worker.js',
+                'monaco-editor/esm/vs/editor/editor.worker',
                 import.meta.url
             ),
             {
@@ -125,11 +101,30 @@ const workerLoaders: Partial<Record<string, WorkerLoader>> = {
             {
                 type: 'module'
             }
+        ),
+    outputLinkComputer: () =>
+        new Worker(
+            new URL(
+                'vscode/workers/outputLinkComputer.worker',
+                import.meta.url
+            ),
+            {
+                type: 'module'
+            }
+        ),
+    extensionHostWorker: () =>
+        new Worker(
+            new URL('vscode/workers/extensionHost.worker', import.meta.url),
+            {
+                type: 'module',
+                name: 'vscode/extensionHostWorker'
+            }
         )
 }
 
 window.MonacoEnvironment = {
     getWorker: function (moduleId, label) {
+        console.log(`Loading worker ${label} (${moduleId})`)
         const workerFactory = workerLoaders[label]
         if (workerFactory != null) {
             return workerFactory()
@@ -140,7 +135,14 @@ window.MonacoEnvironment = {
 
 // Override services
 export const setupPromise = initializeMonacoService({
-    ...getExtensionServiceOverride(getWorkerConfig()),
+    ...getExtensionServiceOverride({
+        url: '/_next/static/chunks/vscode/extensionHostWorker.js',
+        options: {
+            name: 'vscode/extensionHostWorker',
+            type: 'module'
+        }
+    }),
+    ...getSearchServiceOverride(),
     ...getModelServiceOverride(),
     ...getNotificationServiceOverride(),
     ...getDialogsServiceOverride(),
