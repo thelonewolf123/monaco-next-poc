@@ -16,8 +16,10 @@ export class CrossOriginWorker extends Worker {
         super(URL.createObjectURL(blob), options)
     }
 }
-export class FakeWorker {
-    constructor(public url: string | URL, public options?: WorkerOptions) {}
+export class FakeWorker extends Worker {
+    constructor(public url: string | URL, public options?: WorkerOptions) {
+        super(url, options)
+    }
 }
 /**
  * The only way to load workers in vite is using the `?worker` import which return a worker constructor
@@ -37,14 +39,13 @@ export function toCrossOriginWorker(viteWorker: string): new () => Worker {
     return new Function('Worker', `return ${workerCode}`)(CrossOriginWorker)
 }
 
-export function toWorkerConfig(viteWorker: new () => Worker): WorkerConfig {
+export function toWorkerConfig(viteWorker: string) {
+    const worker = new FakeWorker(new URL(viteWorker, import.meta.url))
     // eslint-disable-next-line no-new-func
     const fakeWorker: FakeWorker = new Function(
         'Worker',
-        `return ${viteWorker.toString()}`
+        `return ${worker.url}`
     )(FakeWorker)()
-    return {
-        url: fakeWorker.url.toString(),
-        options: fakeWorker.options
-    }
+
+    return undefined
 }
