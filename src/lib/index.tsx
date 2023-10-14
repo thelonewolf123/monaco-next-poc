@@ -70,7 +70,6 @@ export type WorkerLoader = () => Worker
 function getWorkerConfig() {
     const path = new URL('vscode/workers/extensionHost.worker', import.meta.url)
         .href
-    const url = new URL(path, window.location.href).href
     const worker = new Worker(
         new URL('vscode/workers/extensionHost.worker', import.meta.url),
         {
