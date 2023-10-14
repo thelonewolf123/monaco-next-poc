@@ -58,6 +58,20 @@ import { openNewCodeEditor } from './editor';
 
 // Workers
 export type WorkerLoader = () => Worker
+
+function getWorkerConfig() {
+    const path = new URL('vscode/workers/extensionHost.worker', import.meta.url)
+    const url = new URL(path, window.location.href).href
+
+    return {
+        url,
+        options: {
+            name: 'extensionHostWorker',
+            type: 'module' as WorkerType
+        }
+    }
+}
+
 const workerLoaders: Partial<Record<string, WorkerLoader>> = {
     editorWorkerService: () => {
         console.log(`Loading editor worker`)
@@ -90,32 +104,7 @@ const workerLoaders: Partial<Record<string, WorkerLoader>> = {
             {
                 type: 'module'
             }
-        ),
-    webWorker: () =>
-        new Worker(
-            new URL('vscode/workers/extensionHost.worker', import.meta.url),
-            {
-                type: 'module'
-            }
         )
-}
-
-function getWorkerConfig() {
-    const fullUrl = new URL(
-        'vscode/workers/extensionHost.worker',
-        import.meta.url
-    ).href
-    const urlWithHost = new URL(fullUrl, window.location.href).href
-    console.log({ fullUrl, urlWithHost })
-    // return undefined
-
-    return {
-        url: urlWithHost,
-        options: {
-            name: 'extensionHostWorker',
-            type: 'module' as WorkerType
-        }
-    }
 }
 
 window.MonacoEnvironment = {
