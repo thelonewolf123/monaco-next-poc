@@ -27,6 +27,101 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-all-default-extensions@^1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-all-default-extensions/-/monaco-vscode-all-default-extensions-1.82.6.tgz#bcc758fa7870769d11d0a60a653a782eee0ad2eb"
+  integrity sha512-RYtytBstlWSOglTj9O8utUKr6VE3JO6Gw0oZ5bEmY8Z2J9/9uxz5CGRIFvFkRDtPjXRBzMOMjPn86+uMO2Si4g==
+  dependencies:
+    "@codingame/monaco-vscode-bat-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-clojure-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-coffeescript-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-configuration-editing-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-cpp-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-csharp-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-css-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-css-language-features-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-dart-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-debug-auto-launch-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-debug-server-ready-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-diff-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-docker-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-emmet-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-extension-editing-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-fsharp-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-git-base-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-git-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-github-authentication-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-github-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-go-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-groovy-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-grunt-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-gulp-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-handlebars-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-hlsl-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-html-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-html-language-features-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-ini-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-ipynb-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-jake-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-java-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-javascript-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-json-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-json-language-features-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-julia-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-latex-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-less-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-log-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-lua-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-make-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-markdown-basics-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-markdown-language-features-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-markdown-math-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-media-preview-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-merge-conflict-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-microsoft-authentication-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-notebook-renderers-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-npm-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-objective-c-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-perl-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-php-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-php-language-features-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-powershell-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-pug-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-python-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-r-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-razor-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-references-view-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-restructuredtext-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-ruby-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-rust-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-scss-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-search-result-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-shaderlab-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-shellscript-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-simple-browser-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-sql-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-swift-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-theme-abyss-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-theme-defaults-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-theme-kimbie-dark-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-theme-monokai-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-theme-monokai-dimmed-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-theme-quietlight-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-theme-red-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-theme-seti-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-theme-solarized-dark-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-theme-solarized-light-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-theme-tomorrow-night-blue-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-tunnel-forwarding-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-typescript-basics-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-typescript-language-features-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-vb-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-vscode-api-tests-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-vscode-colorize-tests-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-vscode-test-resolver-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-xml-default-extension" "1.82.6"
+    "@codingame/monaco-vscode-yaml-default-extension" "1.82.6"
+
 "@codingame/monaco-vscode-audio-cue-service-override@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-audio-cue-service-override/-/monaco-vscode-audio-cue-service-override-1.82.4.tgz#7da3e0f5bbe5fa14c7995cc2a89b82a374a8f781"
@@ -34,6 +129,34 @@
   dependencies:
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-bat-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-bat-default-extension/-/monaco-vscode-bat-default-extension-1.82.6.tgz#2dd6f9da8f192e70ab418e06bcda6c7e65de21dc"
+  integrity sha512-MRBSEN1MlXZMQ0eJ7B2h3L/vYiW8+5U4kMjNo1CCFtehu5oGKM9AVLSP2QpwVeeZd9hO5GcNCc13aNLruWQnaA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-clojure-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-clojure-default-extension/-/monaco-vscode-clojure-default-extension-1.82.6.tgz#83f9bcf98c96ece90ec2163b6be7b7a235561c1b"
+  integrity sha512-noGhs+wN+joHTKxSyHTNmoVP3DfU4bMhEvHj0FK5Ht7i2ihaZ8gNJEBbGuuBqVONb2IcT8DpMEeEo6W66kJtrw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-coffeescript-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-coffeescript-default-extension/-/monaco-vscode-coffeescript-default-extension-1.82.6.tgz#b692ba0d68d12db851e1225df2af6665d00253c4"
+  integrity sha512-kzsPQJV1GZdgwMfuUXFh8GTQy8ebLeqnfveOVHtygM6obKadTmczFqaxfYzrKLEV30UnCyAZDBvElPRD9fxbGA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-configuration-editing-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-configuration-editing-default-extension/-/monaco-vscode-configuration-editing-default-extension-1.82.6.tgz#8ee9b5836804112c773c98bd50aeaa1d14674249"
+  integrity sha512-vzqVxBCkgWwnkDPSqrCib3o1OBykIvPhCzpQXkHyxQZ1u6niQhocVrBu639Rr0qR9TkqieLfU1aGrdv5NCqvow==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-configuration-editing-default-extension@^1.82.4":
   version "1.82.4"
@@ -50,6 +173,27 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-cpp-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-cpp-default-extension/-/monaco-vscode-cpp-default-extension-1.82.6.tgz#7874d17d396ff1a79002ae0dfed763c5c987c07e"
+  integrity sha512-P4IvPneM2+7CoSnouPC9wxUd4Iy9WpLT5laTuuBXU26IH3oDk0jaqCZxNOXWkx//IGyUsYs7rvVZ3wJsU7jhnQ==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-csharp-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-csharp-default-extension/-/monaco-vscode-csharp-default-extension-1.82.6.tgz#49a57a37eee597be36929118987fa5f54c308a94"
+  integrity sha512-PQLE2TEd7c/XdOWDDTH7ayCqsgw8Uid6w99SfTgKcQ3fiETGUexDUqfWrrV4cUrDcOYcDP2g++g+7I02Pv8QGQ==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-css-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-css-default-extension/-/monaco-vscode-css-default-extension-1.82.6.tgz#001820a8d767af19d7324e22a0e8643f50950c29"
+  integrity sha512-Yar0pd5aG+Z2Aoy4LVtkY4XBbQTwGgqdrHIuFIzEhSZflmyo+QeVGFa8Gqb9K52D3J8uZGyHRrvXsX3j/Fg/LA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-css-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-css-default-extension/-/monaco-vscode-css-default-extension-1.82.4.tgz#f147016a4629bad9d60fefbd4ab2e4077e7b6a6b"
@@ -57,12 +201,40 @@
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-css-language-features-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-css-language-features-default-extension/-/monaco-vscode-css-language-features-default-extension-1.82.6.tgz#feb4180c87db402d7bf2806e0ecab8788e60f6fa"
+  integrity sha512-+tpnKLid0yusJwgmP0X9LmotXm+ptCQZ6qBVwkpwQGvtEQdJtHluxYeZIB8Yw2xFIGnwR3M+JyAW/CHCoHRrPQ==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-css-language-features-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-css-language-features-default-extension/-/monaco-vscode-css-language-features-default-extension-1.82.4.tgz#a0b0f4cedbe1581918e03bc900747fb9d0f2429e"
   integrity sha512-nHzKhPI9KuTcTIVtyglIE5SHJx91nj1OTi+phb9YqOmFT9UMB57NNI2kUxViL9NXWTxMlTe5NGpL1TEtLV9lvQ==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-dart-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-dart-default-extension/-/monaco-vscode-dart-default-extension-1.82.6.tgz#22827453712bfba50db6381abbb1289f16cb6b02"
+  integrity sha512-CCZvsWaEIzLjZ1J6X6F/Q7C1O584Sn1T0gu3dJVU3kHFvS2HCf/uIuU9NqG26Mfheo5RuloGRH+46VYralWD+w==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-debug-auto-launch-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-debug-auto-launch-default-extension/-/monaco-vscode-debug-auto-launch-default-extension-1.82.6.tgz#7616a00a98f469f4f80b1c575fec3358ac461823"
+  integrity sha512-6pYrYk7HrPUhQa/F6i9epXsoVu0lPMA8rmHzOQA/8Pp0Sd+BapLixa3mtZGM2UMJoe+XKk2bfg/zXXcn8lQ8RA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-debug-server-ready-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-debug-server-ready-default-extension/-/monaco-vscode-debug-server-ready-default-extension-1.82.6.tgz#449c88c4f9d2cfe7c2b63fa470e577fc71595187"
+  integrity sha512-raWV8BuTrmom087/02BRtup3M8RpbBm4wiU8IX59LfwFBhJf/CmI/ca8MN3nph6IZsroaL/CRm/1xxTxBWlomg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-debug-service-override@^1.82.4":
   version "1.82.4"
@@ -80,12 +252,33 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-diff-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-diff-default-extension/-/monaco-vscode-diff-default-extension-1.82.6.tgz#fbe1163582328a77927e0ff8cd36a836bd3f8bc3"
+  integrity sha512-59R66HbfSaZk/fI6hquyWNKrjjqxKllnK6JAMVv9YPY27g8RIlBXKqV+rhSc7LJVXwKQm2BgvxUSqH5MXAfGXQ==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-diff-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-diff-default-extension/-/monaco-vscode-diff-default-extension-1.82.4.tgz#a48f863db3eb910ec4f6a675e2bdd6527dc04c18"
   integrity sha512-e1lK4bqZcwwVNjRqITYz1UpO+OpptsI0uU/IEXXWlA1BVRq7F62rl0Rw69cOu/j+ZLEKvgze6hI5E9ItGMnMSg==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-docker-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-docker-default-extension/-/monaco-vscode-docker-default-extension-1.82.6.tgz#ef324253df08600aebc3d7764e0dffa3e9281492"
+  integrity sha512-oE0PG7EjVU3fcZhgiiay0zbfuUebEGt+8xbeyfbWLS84Sp/jqW49J5sKpKhzik8J9gTq7t3g5Q9ODmithIbhYg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-emmet-default-extension@1.82.6", "@codingame/monaco-vscode-emmet-default-extension@^1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-emmet-default-extension/-/monaco-vscode-emmet-default-extension-1.82.6.tgz#5edb2bd006b207ab5c7944806b93c15286c0057a"
+  integrity sha512-mZJJVr9wwXV2K1wq/UoxkQrLymLj/x2RSE/Q/PL1vBCsN8WmtGJBoLOP0J2mKdTqc2EUcYOjx2fLAZiWVKRw4Q==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-environment-service-override@^1.82.4":
   version "1.82.4"
@@ -95,6 +288,13 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-extension-editing-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-extension-editing-default-extension/-/monaco-vscode-extension-editing-default-extension-1.82.6.tgz#641a62c4be336feb700bc5b439d51d0bcad47123"
+  integrity sha512-coWROoH6Uu519ZGlxI8HYR94pAfNum4x5fP8aBOHg5Xbn6eI67p9phFlyuo7ftvrRJkJfoZ8wGW1IozlOxmieQ==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-extensions-service-override@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-extensions-service-override/-/monaco-vscode-extensions-service-override-1.82.4.tgz#a6e09707f2b2615c5191c088ac3330ea68241673"
@@ -103,12 +303,103 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-fsharp-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-fsharp-default-extension/-/monaco-vscode-fsharp-default-extension-1.82.6.tgz#f6f56ab3f424332a689c99714deb89004f72cea9"
+  integrity sha512-LEVF/E0t0flptiJuCunIGin8QL4ztrM8fPMI5GBFbJDj63CnQg5hGz022ot9YpRX5PC+lXvMZnc/BM103Kzr4A==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-git-base-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-git-base-default-extension/-/monaco-vscode-git-base-default-extension-1.82.6.tgz#2c12d164362a4ce56db5557c97a62a9a8df10fd1"
+  integrity sha512-Jk9rdi6OLpITD0NjBKOd+MziSBTPFtMOUXYrHueeT8sN5TumwSGswlBb2EK/IPiHLKCF2whn2q8lf5d3yblFVg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-git-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-git-default-extension/-/monaco-vscode-git-default-extension-1.82.6.tgz#cfe19cc79c50b9d53a43155a1294498989aa9569"
+  integrity sha512-nyQUb6tPsmPz0Vb6sKdebzsvGjWdRp/sITEIGgvT5zpGxDVFgseMYxWhCRIOxqkFKFasXTyxQgPd6+/OeJhwsg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-github-authentication-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-github-authentication-default-extension/-/monaco-vscode-github-authentication-default-extension-1.82.6.tgz#0ec3918b892451ee95ff9a2d664fabb7ea2881ff"
+  integrity sha512-ItC/QOk84qH8cIsZh2N21v8k42T4Or314QSv+J5x77syIm9f8vUW9W1yiMirwV5TSZ04urSM/dRF4o4Uj0syLA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-github-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-github-default-extension/-/monaco-vscode-github-default-extension-1.82.6.tgz#bee8be701790136da4354ec402ebc1e0cd52f5bf"
+  integrity sha512-kSEJ0C6NOo5WKjf1EQdsjEMSQkecwZSV2NCm9R9tlt7Ke8xSOYQP2vv47nZuEc+9aPFEtj8RNlLtaZ6In7Vh7A==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-go-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-go-default-extension/-/monaco-vscode-go-default-extension-1.82.6.tgz#1164f1ab3503f90262c9650650541faec4375089"
+  integrity sha512-KjKgQGem9Mi/4biZZxIJIfEZ+WBLYJVlBqdXuEjKTU6iB0uWjNx/GACwh+dSb54n+pnKRWXQNEAP29SIlxVjmg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-groovy-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-groovy-default-extension/-/monaco-vscode-groovy-default-extension-1.82.6.tgz#1e36d0bf7c855ae8c4f7566d1be4761dc176ecb8"
+  integrity sha512-zCY62cVqH9qtQRnAvDOVhUZFixWliX9+r3+WvowVdcy+EVYDWzSnDcphki04Tn0ZqPoGgdp2I4txIIJA+tbpOg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-grunt-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-grunt-default-extension/-/monaco-vscode-grunt-default-extension-1.82.6.tgz#adf25dd33f50b8be5253049bab4d93bdf5b210bc"
+  integrity sha512-An3P5L0VHS9wf1XfMtXBFCFmo8WhRME33KUxbvDlr5KK/PxU2KV4WG6bZ2+70mNuvdK7VsoUnAkpI7jHJTb+uw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-gulp-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-gulp-default-extension/-/monaco-vscode-gulp-default-extension-1.82.6.tgz#2410dca630a27ceab95309d7a951bc32118e539b"
+  integrity sha512-SKFT6OWqqNQCbR/DCR3HWPvF90kOFR51VTTXk18KaCD8Ux2Jb/Kpw7ThqP6eZ5sLhD3Leg//GBNnWZsshlHpXA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-handlebars-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-handlebars-default-extension/-/monaco-vscode-handlebars-default-extension-1.82.6.tgz#9065991f907da8a8d87a82167768bc30cb60cf77"
+  integrity sha512-rFSXdT7PPn6bBwpaX0odqJPZF8e/E8ahN9iBhYg4Tm7yNt7zYyy1jRyRmI9MIO3VEKed13IJ1P+FYSNjJZooiw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-hlsl-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-hlsl-default-extension/-/monaco-vscode-hlsl-default-extension-1.82.6.tgz#9540ff1dc4101f0bd3010c2a2d14725a541d6d47"
+  integrity sha512-vQ3DzD7u4lux8HMiG7UrSLNAuv+qWDDlL2QqAeXkCszeKsR1slK0absAjKVrJVHj7XQOSrjD4SDX0oZ6ZnTabw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-html-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-html-default-extension/-/monaco-vscode-html-default-extension-1.82.6.tgz#1acd38fd31c290bb9ab9351d4323669968e47991"
+  integrity sha512-NUQJIKJL45qWesUpoFpkfdynZTr2HulgsdK/8pqTv5fHCyvMtHxhOs5R6UB5F4b5CA5iCdXP+TB55bhXIveuvw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-html-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-html-default-extension/-/monaco-vscode-html-default-extension-1.82.4.tgz#a3371a46a3e9984fb0664c832db8640dae5b3c94"
   integrity sha512-yTAXjnYZjv+kHFyrUBC5bX2jnzOYtgiLd9CJPF4sZyrxZ9U9aMNSUrldULXJx0vsQbxcqb4GJ1aqF+zyFL5qdA==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-html-language-features-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-html-language-features-default-extension/-/monaco-vscode-html-language-features-default-extension-1.82.6.tgz#907cdce48d025c1bdeab114f69ff1cf99ac656b2"
+  integrity sha512-01ecglvy9Hzc/9fHpayLPC+GrsnuY/XL/c5kJ7Pnp/XG21wgwR7A0kxMzHNOhN26yniCyoapbMPuj+xPUqBUuw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-html-language-features-default-extension@^1.82.4":
   version "1.82.4"
@@ -117,12 +408,54 @@
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-ini-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-ini-default-extension/-/monaco-vscode-ini-default-extension-1.82.6.tgz#d9e3cc6e2c741662d5ed64d2e84ea15f0f0ce661"
+  integrity sha512-4Di8wzbzS7ZxNxgBwhzciNec23k2kXUa67ZobizmEnviZSU4tgcKhhKH3zJmjcD5pMqpTZeU9jFiMm+FxWkOdA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-ipynb-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-ipynb-default-extension/-/monaco-vscode-ipynb-default-extension-1.82.6.tgz#2c6f7af613c274d394634a0cb8466ace07b80e70"
+  integrity sha512-Z4mTr7IqXnfd+oJyA8LiSFdDIR4Pnsqops92y51DAgPZnC7Iyxwvm615d9oZnNhpRN4LdtvL/sZ9BSHPBDdvmw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-jake-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-jake-default-extension/-/monaco-vscode-jake-default-extension-1.82.6.tgz#81bd4c7071d1c1c422fcdba1bcbb7c8c568436c2"
+  integrity sha512-OjFM9uc/Q1B/8qBMzDyrDx5SLW0huPMUwH9KdlCbO34CWsBkY5/tCsKCAj/B697dJqkM5w/vprcw0+3DUZxBrA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-java-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-java-default-extension/-/monaco-vscode-java-default-extension-1.82.6.tgz#1ad25ed2df26cf1867d14eefc9fb7023f0985b2d"
+  integrity sha512-qbXgB/Wxsl3YgI6k7H7TeNQXm3nqRFG9pzdTSwlJRzbaFIiQJJ1vbeq8vir3qt6Ob2y+wAIhw3I+eg7h+Kev/g==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-javascript-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-javascript-default-extension/-/monaco-vscode-javascript-default-extension-1.82.6.tgz#185dfe8ee31c4fb0f2f9326d0ac416a4227120a8"
+  integrity sha512-aXzC4XQDSEqFsTjrNQ5DdAOqWd6pjGKgTxbiz7JIag6JSaOpv806cUcXY+coHiIgXdMrIl6e5R78U/AaVYy95Q==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-javascript-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-javascript-default-extension/-/monaco-vscode-javascript-default-extension-1.82.4.tgz#6ccaf8c9a246c04b1ee164ff89dfd9e04f596845"
   integrity sha512-9wuPfiTU5tkiXfCm8uZbUA9xS2HKygJ21Al3rhHWnnNZN1L0LC24jEh/gTtrJGKmXWorKFxsgDIIkWYfay3v1g==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-json-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-json-default-extension/-/monaco-vscode-json-default-extension-1.82.6.tgz#da47d0f9c165388cd52112cd18fbd0818adfa4b1"
+  integrity sha512-Bzd2n0fVB2CyPexcuL2EQtR1BgEImYIOxzOC6bKSL8D2IP1rshPfpVfx6XrzadkGKmGlc/6yGkI8uWTBdBbkrg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-json-default-extension@^1.82.4":
   version "1.82.4"
@@ -131,12 +464,26 @@
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-json-language-features-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-json-language-features-default-extension/-/monaco-vscode-json-language-features-default-extension-1.82.6.tgz#43d18eb675237eb80cb1153cfd6b3101971a227f"
+  integrity sha512-MoswmY/eGHD7or/p2LySfBTKMlZ0XiB5yUGl6ftrBjCOGFVRMc7dv5bBQak4t5WApR2p5zYiXlXfOKS/uG8Zsg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-json-language-features-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-json-language-features-default-extension/-/monaco-vscode-json-language-features-default-extension-1.82.4.tgz#bf80d27138d87f0d3fbd0ff2950900fbd3e65238"
   integrity sha512-9bon9Inx6V64NLrm/BoiCrvSA4hdIftVYbjv31Qaso/o3317WmAlFRqW3yTXlVgU66CXoZPowc7KaGqWXDXcCA==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-julia-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-julia-default-extension/-/monaco-vscode-julia-default-extension-1.82.6.tgz#b98f1ccaca339af9c19bb38b23873b5a60048072"
+  integrity sha512-b0mH0OlnBFPxqGdMgigdXjbIrtW19TQRscl/AORTIxORuI5g37kcNdlHJujkevQCVDWJguzxKNTs2RgB42GRZw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-keybindings-service-override@^1.82.4":
   version "1.82.4"
@@ -163,6 +510,20 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-latex-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-latex-default-extension/-/monaco-vscode-latex-default-extension-1.82.6.tgz#2a5021a0105f07ab5e9953b503099b621ce0bac6"
+  integrity sha512-zuuvj+6daguxFLjQOIDNb5jd76gjqCxhRJyVWjti2a8twaNfDDJXbVhDwQI/x08nG4fct/qlMEOMjhKI69elxQ==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-less-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-less-default-extension/-/monaco-vscode-less-default-extension-1.82.6.tgz#7c4e12d3a27dc44c0908d216b471a333d1a073d3"
+  integrity sha512-Ubqf0BbxwfAJEYu3zBSbJnTWgtXW/YGFj5onBMwEducuF2zJJtLbNj97+4KaMjWskVHmy47YnIh164LwzWLwAg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-lifecycle-service-override@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-lifecycle-service-override/-/monaco-vscode-lifecycle-service-override-1.82.4.tgz#b82fe89169b584d68918e8555333d3fae30e10f3"
@@ -171,6 +532,34 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-log-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-log-default-extension/-/monaco-vscode-log-default-extension-1.82.6.tgz#53f54144d137143a5cfaf47423a89a65d1c67c2d"
+  integrity sha512-a/ScfJ0gUt4gAHGdivQ3Ak90lHeIuLTzmOmqNJy/E0wTRoY/OJsxrV6P4zGvHTx+CIAijgFT8f9VgqWKJ/x7lQ==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-lua-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-lua-default-extension/-/monaco-vscode-lua-default-extension-1.82.6.tgz#779b43c06f948780172117f1761525d8cf389d56"
+  integrity sha512-cwISSzunz8xQYbVxJpkpmJflKrRl2bfCBEvZhcIykucKaZlI5ZU2LKK9+0NQry8r8b2FIFqfeFUgy/S3+dHwug==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-make-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-make-default-extension/-/monaco-vscode-make-default-extension-1.82.6.tgz#8061071cca68439b11351f1ec39b991c68b9a70b"
+  integrity sha512-x5/rOnC/hmC4M+Qbka0QP/P0EO0rRQ0Oc12cC4dz2UaOtGG1sOLLfWtS1WbthyqP3VG5zZTJORaAp735xW/nJA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-markdown-basics-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-markdown-basics-default-extension/-/monaco-vscode-markdown-basics-default-extension-1.82.6.tgz#08eb26e0ae7a737328b48af0593a29e75241b8ee"
+  integrity sha512-9XFjLJwCOYBhbn0x5R5XHP7wnc4+RFdcRgHe4mQk9j1sxCrlYB+C5Cuw+4hSd2ZK7pEMk/8+mRQGpO4cb0Jcig==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-markdown-basics-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-markdown-basics-default-extension/-/monaco-vscode-markdown-basics-default-extension-1.82.4.tgz#2ae5661ae74d60d4a966f5ed90f107c2f8939f65"
@@ -178,12 +567,26 @@
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-markdown-language-features-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-markdown-language-features-default-extension/-/monaco-vscode-markdown-language-features-default-extension-1.82.6.tgz#b66eda6ddd50220cf1a97d69e9c0c5d3f28cb500"
+  integrity sha512-FcJHBu2gr5mcXIl9Nd6Hngtixor5Mz8m1+vJEIDG/ypn3i1dsS44RYuscdTWtX696I5BnU2ODM3FCCn5eLtrMg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-markdown-language-features-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-markdown-language-features-default-extension/-/monaco-vscode-markdown-language-features-default-extension-1.82.4.tgz#736d27d0fa5267f6df6b1929fdc10c4b507000a7"
   integrity sha512-fMvhuUFa+PcsUT05UF2WeTo71kjFxndBRIOFcvwwob4PgpmelfncFXlQbL4q+mDdEgnvlsGTxF1bC3MGijRZWg==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-markdown-math-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-markdown-math-default-extension/-/monaco-vscode-markdown-math-default-extension-1.82.6.tgz#abfd172b2de7bb792f827b1a226d96287e6ab233"
+  integrity sha512-0FaP7N0GOkkJi0uvo58TRDQlh/dEliLbXQtfuUfIa252qGKvx0oo5+jlEKYKhyoctecYn900z7DgJ5nWZwr27g==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-markers-service-override@^1.82.4":
   version "1.82.4"
@@ -193,12 +596,33 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-media-preview-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-media-preview-default-extension/-/monaco-vscode-media-preview-default-extension-1.82.6.tgz#70e61886486f2bb8ba9f4c1e76a701e8cf6df148"
+  integrity sha512-UZWz+0XtyWUQ/vYlBfxdpp9LhBnHMra3aNoFlyZjYRRIWACUybXlMpWDkd3yJhNoicXAnA7GzcazXk/2gO18iw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-media-preview-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-media-preview-default-extension/-/monaco-vscode-media-preview-default-extension-1.82.4.tgz#29b9393dfbb610d37a29a061ec2cf79b1e322a12"
   integrity sha512-AtBaZLQhsDXqRgXRbrWz0hUWx7hhzYDpr0qeOc/ujG+3qGvmSDlR2KFX2x++NSkhzEGDtHbmI+y+TOQMNZgefQ==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-merge-conflict-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-merge-conflict-default-extension/-/monaco-vscode-merge-conflict-default-extension-1.82.6.tgz#090e11ffde89c39cc55504553a6e2d055d0cc23d"
+  integrity sha512-o4ZeTGtdYIbMRJPITFuIJrPjd/09x8I2Nf0ONpLxogs48LD1gRlfhZhp/Qw1i71MNVuPUX1BTaABg9xR2gLzqA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-microsoft-authentication-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-microsoft-authentication-default-extension/-/monaco-vscode-microsoft-authentication-default-extension-1.82.6.tgz#c113c6b124b139de99a01d971be6988747f0f769"
+  integrity sha512-eNH++cQJq8QbTHA97ttYM745wQ33A46PQmczdaUAlSxCy12jrYS6TWzVoTh/Q/Yr1fCQLjiEZ6Lhkz1WXcCl7w==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-model-service-override@^1.82.4":
   version "1.82.4"
@@ -208,6 +632,13 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-notebook-renderers-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-notebook-renderers-default-extension/-/monaco-vscode-notebook-renderers-default-extension-1.82.6.tgz#cc0d55a9b0083a065d82c3f0971dc52040147ba1"
+  integrity sha512-yNc4w0g7l5ERbmQhrmf7H4xuJisi6Rf6yB1xKj628qxEuxPaPk6vp3z3EOMidhLRHaQjT5MIjrJwHdEtOOknsw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-notifications-service-override@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-notifications-service-override/-/monaco-vscode-notifications-service-override-1.82.4.tgz#51f34235e0bd2ebe0a6240e3a9dcd097b88d169a"
@@ -216,6 +647,13 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-npm-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-npm-default-extension/-/monaco-vscode-npm-default-extension-1.82.6.tgz#85ecffaba2654a59c1f6f58e23ae8914f3c3c33f"
+  integrity sha512-Pq9Eiv8SK9w8Vz5BouHo3dSlZbPBdXwoMFOqrIHowLyXOfWvRK8UxXEYrMZ3EkCR4B+IZoQe1eiRu3hhygqpCA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-npm-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-npm-default-extension/-/monaco-vscode-npm-default-extension-1.82.4.tgz#5d8ff720d0f356df40c8bd812750826c174628d4"
@@ -223,13 +661,48 @@
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
-"@codingame/monaco-vscode-output-service-override@^1.82.4":
-  version "1.82.4"
-  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-output-service-override/-/monaco-vscode-output-service-override-1.82.4.tgz#1bc57b0e970138ca48a2bcb5aeb4c62384bd9020"
-  integrity sha512-jSj6TbwlPt1eUAvPPywZzZ7a7K2A1omFB6wh+nliVjy1TmZFfsqhbnqlZhIWZ/sFx+YL5Pd0y6YOgr5FmtKDVg==
+"@codingame/monaco-vscode-objective-c-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-objective-c-default-extension/-/monaco-vscode-objective-c-default-extension-1.82.6.tgz#90e9a1c431f2c5e877df7a135a5751c107a382fa"
+  integrity sha512-SXTBzQmytXqXaWz4xsrCgaclfhXTI8GKNBPl+l5ZtxCjI4Z2AVlBpehvV1KBzZ7eYWyjmBDHJHyyx1vDbo23eg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-output-service-override@^1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-output-service-override/-/monaco-vscode-output-service-override-1.82.6.tgz#92a381d8e7a53f218b60306811c31f458a07906f"
+  integrity sha512-iJ3kM25n3wEQOrHeF66WVfAp9Cift9Aons22wtNV/Iuo5UfzVHcIYEnuem75B/9cr0OtxMt/hTWtdqzCrRYsBg==
   dependencies:
     monaco-editor "0.43.0"
-    vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-perl-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-perl-default-extension/-/monaco-vscode-perl-default-extension-1.82.6.tgz#07b7e1522160df627c8af1470f2bff47a6b87f6a"
+  integrity sha512-Xn3c5YwR5EkmQBKMDZxpZgzFtY/0dkPstOlPopxt/wo4KS4Y0XxEu0AEBadEKI2n1dpvlXauqnVb2nqtEHxI6Q==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-php-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-php-default-extension/-/monaco-vscode-php-default-extension-1.82.6.tgz#deb396c7f59bb7214af2a27a9840c6dbfacb4ef2"
+  integrity sha512-F6eClh/pyZIBmdHaEkdrPjcyf12T782Iv3DCVWEpfTXW265v7aG7MOWdE6pb/IxSZfZmK0EPWOSEnl4M4XZJRg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-php-language-features-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-php-language-features-default-extension/-/monaco-vscode-php-language-features-default-extension-1.82.6.tgz#3f2d8c0b2ee27b6fd5fddc99c45b7027ee5e5338"
+  integrity sha512-es6moWTxPV15KU3uh8v76JBkEd/5R3Djk0bdYxdyNV9ohDaOlKR9ZvhULh6C2rD9vd2GFBtRrfBIIqakBl8JBA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-powershell-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-powershell-default-extension/-/monaco-vscode-powershell-default-extension-1.82.6.tgz#1542a07f536dd9e5ecb0ce277a4d4fc20010fa1d"
+  integrity sha512-S0NJ8ho5jIEICdnpKq0UF7/rJWMcxyCYHschuFlsNXJWIONgvsUdHE/pxNWazQUOIC+fGDV0QzHiztWyq2nMgQ==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-preferences-service-override@^1.82.4":
   version "1.82.4"
@@ -239,6 +712,20 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-pug-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-pug-default-extension/-/monaco-vscode-pug-default-extension-1.82.6.tgz#960f9d95a80ccf260068350a23b96596d609c4b8"
+  integrity sha512-9tBDjgiCSrxvIpfjlW/FKavfhQx2nXaS8cnlqG3Vkge2qw1Fh32LD+IpKbmsM6CTR2cu0nHO7g2crgzObRWiiA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-python-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-python-default-extension/-/monaco-vscode-python-default-extension-1.82.6.tgz#96d31284a15a0b1b169570b84c696edbc6e9206e"
+  integrity sha512-dFn0U25D9XA3VFecBdDmQ/Y8iAlDP7c5fzWZphosbXG56nLBFh2HwOaUHRoX5PsnD3QkoyZpyRLfHbb8vDR2Eg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-quickaccess-service-override@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-quickaccess-service-override/-/monaco-vscode-quickaccess-service-override-1.82.4.tgz#10a13153f98d2b56ee43e4f14687937638fa1b03"
@@ -247,12 +734,68 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-r-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-r-default-extension/-/monaco-vscode-r-default-extension-1.82.6.tgz#c858b4be58df6ebd047b42f92e951eee662a0b1d"
+  integrity sha512-wb0bc34pFzAq05azLUy0iu6NBQBX24LqHERkZFUpK1D6qXzU0543L/hRY09/korJpf/x3WYyvu/nOXtXtF2nlg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-razor-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-razor-default-extension/-/monaco-vscode-razor-default-extension-1.82.6.tgz#709066181d610962474c61862dadef9b2d71e57e"
+  integrity sha512-MaPbJCbagOTJmtciLJGiIDqHalaHxGL5xANhxni5BMF8r7CYx6liv2bpIAGF7OCdfcrvEe3XrRHPfxPX/vTHWg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-references-view-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-references-view-default-extension/-/monaco-vscode-references-view-default-extension-1.82.6.tgz#05a290204227a8df4c52ab51bff4346299fe9b85"
+  integrity sha512-0uBYyuJ0x7OzLoMPa7q9EvHLs2OyjYnrOGE9PLOXu+rGabwxHkE3R3ZPQly2Kj2b34+o72Fa7YfOqE5Ke7Fb/A==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-references-view-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-references-view-default-extension/-/monaco-vscode-references-view-default-extension-1.82.4.tgz#5970078cc29965070488e2be1150005497172781"
   integrity sha512-qgITIO+/zcVI+/FHkOnto17bDaPw3It72FCJEZF3a6kHnl5DOtR9hh0/JeOEGVymKSXZImaRlqmpUq+lxwQsVQ==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-restructuredtext-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-restructuredtext-default-extension/-/monaco-vscode-restructuredtext-default-extension-1.82.6.tgz#e35e44d1685b79c28455842b2fbba3b70a77f0d9"
+  integrity sha512-nUTDNNatycighEYVzohOnjBDqkia/ZDeFbzHDZMVcM39J37cSdP35EuXUCps3zMqS5CTR7MGJQwqdFzH9Hkp7g==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-ruby-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-ruby-default-extension/-/monaco-vscode-ruby-default-extension-1.82.6.tgz#b14c350df7d51c69aa68d82c06abcd6f687b90b1"
+  integrity sha512-+q9njdM1So0ZkVwLC5MVSo50jvJtV5UMGNHwKaBtxCSAJe8BwnULHhFHVC8Eb+SzJDyU2cNAkE+6Ph14Uoi9QA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-rust-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-rust-default-extension/-/monaco-vscode-rust-default-extension-1.82.6.tgz#b9888f59359f0357fd33389bc24169f393929421"
+  integrity sha512-p1wKx/3kk/X/V9VMuKOqya3/PdCpF5EXWGBO0W5c+yzjhSE96DZgEdSXlNb3Z59Hk0dqMSyUgn6bB2o0Gc7w1g==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-scss-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-scss-default-extension/-/monaco-vscode-scss-default-extension-1.82.6.tgz#cc1db090de599301ecc7fe125d78fa3072127d67"
+  integrity sha512-EIy6YAe8i7f1JXD8+fQZ5yF9sY2EihX/Rma+DZUcFMdi0l/fc1c50JEONABkOQ/NutQozIV/6jzMYI9B2M0FRw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-search-result-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-search-result-default-extension/-/monaco-vscode-search-result-default-extension-1.82.6.tgz#b07b30b9d4a402acffb6c292d12bc552e2940aab"
+  integrity sha512-J92dn/Y+KPxLqu7LYuuMVij5DQEVnpwi2FmeL0Le9O+jN+3mzAcO9OYXx0tT2RlwYURLINUlfbFXtTXk3qvlYQ==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-search-result-default-extension@^1.82.4":
   version "1.82.4"
@@ -269,6 +812,27 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-shaderlab-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-shaderlab-default-extension/-/monaco-vscode-shaderlab-default-extension-1.82.6.tgz#1548fd3ad21e4f720f29ee733c291de80257f817"
+  integrity sha512-KAf46wAoPpbhXo7mJTTxp3b4Sm6rOnCqj7dWjfKb+w1G2JO9566sZX6eC34iQT4V5fo+aD9FE65Vui0/6zEnDw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-shellscript-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-shellscript-default-extension/-/monaco-vscode-shellscript-default-extension-1.82.6.tgz#49c21adc9f1f41472d461ff52010415f8100b366"
+  integrity sha512-k1Ih0izix3TsCSe6F9EB42xADv/zgOaSBM2p4AwB2GNFPU0aJ7RWJGXxTYDeGDdIK8T87ft89CS3J5uGPn6Snw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-simple-browser-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-simple-browser-default-extension/-/monaco-vscode-simple-browser-default-extension-1.82.6.tgz#484248c716c56312e5381876eb0da59d0317ab1b"
+  integrity sha512-85Plyw/b+SJnsv2vrt94Vn82aBZaqSLzPSeEuWKoqbhSXRxVVg+75xJj4JjOmSMngXUuqqOsA+Q+xHkn2r1gRw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-snippets-service-override@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-snippets-service-override/-/monaco-vscode-snippets-service-override-1.82.4.tgz#b8f609bb65b8193ddc567d58b45244eb69d9b26a"
@@ -277,6 +841,13 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-sql-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-sql-default-extension/-/monaco-vscode-sql-default-extension-1.82.6.tgz#07a3a36327cf0094f19458becaed1bfe546a187b"
+  integrity sha512-N437gRjiS12HrLS+VCWmueo0BMY5dEDV700kGqJ3nt4/FHEWWRrlPhGyykKzW2s9TyNcWVaSV+VHpgvVAy3txA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-storage-service-override@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-storage-service-override/-/monaco-vscode-storage-service-override-1.82.4.tgz#f51ab4435a5e46dd241f0efff3134d1e2611bef0"
@@ -284,6 +855,13 @@
   dependencies:
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-swift-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-swift-default-extension/-/monaco-vscode-swift-default-extension-1.82.6.tgz#4cfbf3d35b870bbcb6eff660de458c3e92866381"
+  integrity sha512-HvcxBmJLxpjS7C8fZERJ2Qkkf+ACwwX17UO0oXe9ZvQRhZjDnlbA6ubWMTIA+db7Ujdb/1EQ9mMbyVaI1QMtdg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-textmate-service-override@^1.82.4":
   version "1.82.4"
@@ -295,12 +873,61 @@
     vscode-oniguruma "^2.0.0"
     vscode-textmate "^9.0.0"
 
+"@codingame/monaco-vscode-theme-abyss-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-abyss-default-extension/-/monaco-vscode-theme-abyss-default-extension-1.82.6.tgz#e4e52e454efd5e75cbcefa2a8a6cff6deb1d0890"
+  integrity sha512-qP4dsQkiBhvp101a+e7SDHCua0v6GzaaQ0rXQojUGc2S5AjvYla5PIC4Z9iVVWhdupt7ckgWX+YRt8Q7aWu7tg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-theme-defaults-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-defaults-default-extension/-/monaco-vscode-theme-defaults-default-extension-1.82.6.tgz#fb9e711e71e1fda2c785d53e4e2f30fc451b8d2c"
+  integrity sha512-3/u0CDitzSbLSJrkj157VjDty0vU5E2OfxPihrxGczJGkrEqL2LY8Op8u6EYpbO0Xuahk9JJ9olrux7tYaUORw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-theme-defaults-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-defaults-default-extension/-/monaco-vscode-theme-defaults-default-extension-1.82.4.tgz#a8faeb361ba02d58a9faaec7e7f330d6f53a9bb3"
   integrity sha512-2uCHJGXqtA21pQKfgq+nlc5g6RoBLrjvFID0xhjYKOjRbFywV/YGNfNtFVRIXy0SP8ZK2M9ownNbcewbt3mEjQ==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-theme-kimbie-dark-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-kimbie-dark-default-extension/-/monaco-vscode-theme-kimbie-dark-default-extension-1.82.6.tgz#d48244bd9cf0e5809307e431e08da0992e6f9a94"
+  integrity sha512-MDPbbXzh3AiifVr0ZtqvZI/Mo8/n/r13+/houAimSi7rISu3b/iwTyTupwI086RX2PUaxGSur8VFVnyQCzEyfQ==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-theme-monokai-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-monokai-default-extension/-/monaco-vscode-theme-monokai-default-extension-1.82.6.tgz#8bd23d5ef1864504e942c451c03e8afcab56965b"
+  integrity sha512-rprqUxdKZLrg9j7tqZAhVHKkrDRbUxB8YweptGYVbzTwfdGnk7OsLUXtJsaSfUGN1N3sgBwBtpkp5Kvh0vdW4A==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-theme-monokai-dimmed-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-monokai-dimmed-default-extension/-/monaco-vscode-theme-monokai-dimmed-default-extension-1.82.6.tgz#c3cd7cac857074ffde8be544e80c97062f02a774"
+  integrity sha512-9J2PLqaELHFxckTkz3W1r6YCvfZUJd1LiiZKMJ7I/zbXYbDwB2HOlLpze0Czxz+bMfrgFpbAC1mw1JnOAdzo0A==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-theme-quietlight-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-quietlight-default-extension/-/monaco-vscode-theme-quietlight-default-extension-1.82.6.tgz#8958ea2d0e25dfc53d70cb86b5c0186b05855fbf"
+  integrity sha512-OUrDmxYvStsKgSwLpmTzb1PQysqsZqoLxCWZzs4lJquPVF9fzXjvl35/d1ME6UnfXQ0c6lTtOgmgtv2DQHKXFg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-theme-red-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-red-default-extension/-/monaco-vscode-theme-red-default-extension-1.82.6.tgz#ad223191c1f62645d23f767083bb1169ab4795ab"
+  integrity sha512-bZPZCvxSR3mZZBz6yFp98UzfcRdAfhkrc4U8ME6tOWduIyiyrR7zq5TXbSkMo13GQWzWb5OSEgBg/21N7KsdCg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-theme-service-override@^1.82.4":
   version "1.82.4"
@@ -310,12 +937,54 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-theme-seti-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-seti-default-extension/-/monaco-vscode-theme-seti-default-extension-1.82.6.tgz#072716c78175dad2cc00e111ed3073c67ded6cfb"
+  integrity sha512-wN0MlZungbX/BT1fJSJADUMa+qc7w1/VPDGOiDS7emX6UfU902PY/rk+W+5IoP41SyBOs/qcLCKjhTS9/tPUFw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-theme-seti-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-seti-default-extension/-/monaco-vscode-theme-seti-default-extension-1.82.4.tgz#c9f42b803363ddc1a7f096ee460c14d4ae02c3f9"
   integrity sha512-5G8+qIRzvVQfw+biNTGqnbX9tOBmKsMZ7h//jcPkhS3AsINcFRGp7ZOoj+6IVtbPT8vDHYNP77gxDxo79vRUZg==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-theme-solarized-dark-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-solarized-dark-default-extension/-/monaco-vscode-theme-solarized-dark-default-extension-1.82.6.tgz#d7f9635a436df2bc70f34d4bb0604ab88bdea41d"
+  integrity sha512-OQH0BdZHyvs1WJKLejplrmwij7XZGvRQ6A8DwMQ9D9t+psET+tj3014EpXAC4EPOsDgCdigTp/cNrpcvCMdsnA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-theme-solarized-light-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-solarized-light-default-extension/-/monaco-vscode-theme-solarized-light-default-extension-1.82.6.tgz#341875f9f42f75df53ac68c2473f0c7d505fed11"
+  integrity sha512-fghpna1CEzYq7HpKXOgyexIYi5prDcxmxTgC4LI3gLszxXgADKwpCN6EK2i3J3wfVmJouEiusrNDWA097CMOzA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-theme-tomorrow-night-blue-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-theme-tomorrow-night-blue-default-extension/-/monaco-vscode-theme-tomorrow-night-blue-default-extension-1.82.6.tgz#18bac5be5fd57a90b6f300bf8b8ec090b77eaef0"
+  integrity sha512-14MABHE4MKMO2gFb79CEls4QliIP4insYgN/ixIi6oTrpcRqrJ+8VVIyBDLCqCDI+loUbRPMW1F+Ks7ONvgnHg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-tunnel-forwarding-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-tunnel-forwarding-default-extension/-/monaco-vscode-tunnel-forwarding-default-extension-1.82.6.tgz#7a6d81503ead02cd5f1097d07e3f511398db3de9"
+  integrity sha512-Z5KXk53EmU67m+FWlSg/dwgs8ZOqD6sL+L6tu0A1vZW0xQYcMad9fG4r9wvxJ6y/SGRxohGN5i3WjGNnZvGpXw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-typescript-basics-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-typescript-basics-default-extension/-/monaco-vscode-typescript-basics-default-extension-1.82.6.tgz#920b5476f59e295bc79a8391664b1639b61a00e8"
+  integrity sha512-f0p4lVxiq7oKBM3lfTBqpXrhOAQZ3WijzHJF3ehbSGFX/4NgOgxYIkoW+O9KVSY/dRwMWrXUQKxghDWcGLu/Xg==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-typescript-basics-default-extension@^1.82.4":
   version "1.82.4"
@@ -324,12 +993,26 @@
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-typescript-language-features-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-typescript-language-features-default-extension/-/monaco-vscode-typescript-language-features-default-extension-1.82.6.tgz#9e7e31740edc95e90ef384c4325c72ae2aba379b"
+  integrity sha512-82lHijpVQpw4raS+PTYA7KOTCSX41Mn7iW6AJiOublz68AktY/rcZ/bidkzhlzQnXdLs3EWcJE8zWlOenZDn+g==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-typescript-language-features-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-typescript-language-features-default-extension/-/monaco-vscode-typescript-language-features-default-extension-1.82.4.tgz#bef76e6ed5629c6a2e8fceddfcb221228ad199e0"
   integrity sha512-d9VbQmsF3tJEsc8wiKOh5cErWVkQsfe5Pt440mDhn/oi5SF5C+jPjtrggzDDzCrT/4J9gq0pUeXvUrU4qD2dPw==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-vb-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-vb-default-extension/-/monaco-vscode-vb-default-extension-1.82.6.tgz#191b6eaac98a897a3a4fec9ea5c5880cbf7b8ff3"
+  integrity sha512-FLmq0HXvXFAU1yngXcZN8v8puJNImSffTkBNNoz/wcwQHrSA5jYsB8ywhh51zN83S3uK9oFAPF3EEl4b9qitpw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-view-banner-service-override@^1.82.4":
   version "1.82.4"
@@ -363,6 +1046,27 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-vscode-api-tests-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-vscode-api-tests-default-extension/-/monaco-vscode-vscode-api-tests-default-extension-1.82.6.tgz#75a0cc16d9d1d1a650e1eff8a5b10fb38733f7e3"
+  integrity sha512-hE+guuxgi+fuDASgBQR64zAU4pKd8emUFhPXh/MCEFKLWPOeQ39fVXdIfkBvFJWPbmDEySj5l1RZ5JYbczLweA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-vscode-colorize-tests-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-vscode-colorize-tests-default-extension/-/monaco-vscode-vscode-colorize-tests-default-extension-1.82.6.tgz#a9603c3b46488592f6acacff24a52f2c68a5679b"
+  integrity sha512-QQ+KtQZtk1ISchhY5xhipAbKFp7DT1MtRmwKsg6pPsy7V/++XZlZFyDvVlMo7NI/uQS57OCWWPBgj+gUJYppiw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
+"@codingame/monaco-vscode-vscode-test-resolver-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-vscode-test-resolver-default-extension/-/monaco-vscode-vscode-test-resolver-default-extension-1.82.6.tgz#3c092fa03f85d8a2ecb9d266d48795378b062b8a"
+  integrity sha512-7uEEnLqiUIihAZgXrvodJ+TWL76PrNWHHBk57ERnBxLJR6Nt4WQIK/Kzt/abAIT9qJM32fzXbRHrL+Rc4SjffA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-workspace-trust-service-override@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-workspace-trust-service-override/-/monaco-vscode-workspace-trust-service-override-1.82.4.tgz#875b04994bb50ee14bb33b998f3bae5d975a220c"
@@ -371,12 +1075,26 @@
     monaco-editor "0.43.0"
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
 
+"@codingame/monaco-vscode-xml-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-xml-default-extension/-/monaco-vscode-xml-default-extension-1.82.6.tgz#955f9fed01fd06d0e5096575f347be4b3435f653"
+  integrity sha512-4U3sFYh6eQ0QcsmClbTAnYzp0LyKDh+l0UpcWDr34ngUlw47I013ngIbh0yEa+jVM42UqxiC1r/5PQx1oHOzHw==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
+
 "@codingame/monaco-vscode-xml-default-extension@^1.82.4":
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-xml-default-extension/-/monaco-vscode-xml-default-extension-1.82.4.tgz#3f836d1c88ad23acd61867663bedc875419fe3a8"
   integrity sha512-ad++zPDcysxWVUKCzO8ImQ5mrAWw9Q0Se5mHCSHl8h9i/LhcgJZAYKi/ku49t1/i7O/aWlWbCBGrtPqZ4efqDQ==
   dependencies:
     vscode "npm:@codingame/monaco-vscode-api@1.82.4"
+
+"@codingame/monaco-vscode-yaml-default-extension@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-yaml-default-extension/-/monaco-vscode-yaml-default-extension-1.82.6.tgz#9a5beb607d4b620443b295b109ecb7c9f8808db4"
+  integrity sha512-zXSG8AnnmdsWRQUa7yh9dAksNSQ4Qs7DORnjCy2VIVV8IZDUNFDLwdO4UMM9gv1R031bVHb7vGhtNEGqJwFQsA==
+  dependencies:
+    vscode "npm:@codingame/monaco-vscode-api@1.82.6"
 
 "@codingame/monaco-vscode-yaml-default-extension@^1.82.4":
   version "1.82.4"
@@ -2827,6 +3545,13 @@ vscode-textmate@^9.0.0:
   version "1.82.4"
   resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-api/-/monaco-vscode-api-1.82.4.tgz#9dcbe19d48b2146003fd0760bd10663ec67d4896"
   integrity sha512-hyqKIlucXSmT2YRgQPdfo6rchDPG8W3S2rSvRtrzQRBdLgbzjPf8p5yEcMDWrry3YQgFvVzPCIs81W7052JeUQ==
+  dependencies:
+    monaco-editor "0.43.0"
+
+"vscode@npm:@codingame/monaco-vscode-api@1.82.6":
+  version "1.82.6"
+  resolved "https://registry.yarnpkg.com/@codingame/monaco-vscode-api/-/monaco-vscode-api-1.82.6.tgz#95bb2b4b0816c92a548f79a0d21c6c9579fd924c"
+  integrity sha512-Trxow2RIu4i6EvS2wEIl0cktpL4UMv0e1UItUIfyRtZsCECnuE6Auedp6BK2JLzAH96yVgp9elEBlTo7rvnf0Q==
   dependencies:
     monaco-editor "0.43.0"
 

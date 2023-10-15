@@ -4,14 +4,15 @@
   "private": true,
   "scripts": {
     "worker-fix": "cp .next/static/chunks/vscode/* .next/static/chunks/vscode/extensionHostWorker.js",
+    "postinstall": "node node_modules/vscode/monaco-treemending.js",
     "dev": "next dev",
     "build": "next build && yarn worker-fix",
     "start": "next start",
-    "lint": "next lint",
-    "postinstall": "node node_modules/vscode/monaco-treemending.js"
+    "lint": "next lint"
   },
   "dependencies": {
     "@codingame/monaco-vscode-accessibility-service-override": "^1.82.4",
+    "@codingame/monaco-vscode-all-default-extensions": "^1.82.6",
     "@codingame/monaco-vscode-audio-cue-service-override": "^1.82.4",
     "@codingame/monaco-vscode-configuration-editing-default-extension": "^1.82.4",
     "@codingame/monaco-vscode-configuration-service-override": "^1.82.4",
@@ -20,6 +21,7 @@
     "@codingame/monaco-vscode-debug-service-override": "^1.82.4",
     "@codingame/monaco-vscode-dialogs-service-override": "^1.82.4",
     "@codingame/monaco-vscode-diff-default-extension": "^1.82.4",
+    "@codingame/monaco-vscode-emmet-default-extension": "^1.82.6",
     "@codingame/monaco-vscode-environment-service-override": "^1.82.4",
     "@codingame/monaco-vscode-extensions-service-override": "^1.82.4",
     "@codingame/monaco-vscode-html-default-extension": "^1.82.4",
@@ -38,7 +40,7 @@
     "@codingame/monaco-vscode-model-service-override": "^1.82.4",
     "@codingame/monaco-vscode-notifications-service-override": "^1.82.4",
     "@codingame/monaco-vscode-npm-default-extension": "^1.82.4",
-    "@codingame/monaco-vscode-output-service-override": "^1.82.4",
+    "@codingame/monaco-vscode-output-service-override": "^1.82.6",
     "@codingame/monaco-vscode-preferences-service-override": "^1.82.4",
     "@codingame/monaco-vscode-quickaccess-service-override": "^1.82.4",
     "@codingame/monaco-vscode-references-view-default-extension": "^1.82.4",
